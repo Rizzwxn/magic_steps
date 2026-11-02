@@ -274,7 +274,7 @@ footer { background: #0d3040; color: #bdd1d6; padding: 28px 0; }
 
   .team-card img {
     height: 280px; /* Give photos room to display properly */
-    object-fit: cover; /* Cover frame evenly without awkward cropping */
+    object-fit: contain; /* Cover frame evenly without awkward cropping */
   }
 
   .team-card > div {
