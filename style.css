@@ -265,3 +265,20 @@ footer { background: #0d3040; color: #bdd1d6; padding: 28px 0; }
   display: block;
   object-fit: contain;
 }
+/* Fix mobile layout for team cards */
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* Switch to 1 column so cards take full width */
+    gap: 20px;
+  }
+
+  .team-card img {
+    height: 280px; /* Give photos room to display properly */
+    object-fit: cover; /* Cover frame evenly without awkward cropping */
+  }
+
+  .team-card > div {
+    text-align: center;
+    padding: 16px;
+  }
+}
